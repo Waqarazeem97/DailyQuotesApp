@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+        <TextView
+            android:id="@+id/textView_quote"
+            android:text="This is a quote"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:fontFamily="@font/quote_font"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+        </TextView>
+        <TextView
+            android:id="@+id/textView_author"
+            android:text="This is a quote"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+        </TextView>
+<!--        <Button-->
+<!--            android:id="@+id/button_copy"-->
+<!--            android:text="Copy"-->
+<!--            android:layout_margin="16sp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:ignore="HardcodedText,VisualLintButtonSize" />-->
+        <ImageView
+            android:id="@+id/imageView_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_outline"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            tools:ignore="ContentDescription,HardcodedText" />
+        <Button
+            android:id="@+id/button_share"
+            android:text="Share"
+            android:layout_margin="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
